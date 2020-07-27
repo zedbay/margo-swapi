@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'src/styles/color.scss';
+
+@font-face {
+  font-family: "star wars";
+  src: url('./assets/soloistout.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'star wars';
+
+  * {
+    outline: none;
+  }
+
+  h1 {
+    margin: 16px;
+    color: $concrete;
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 8px;
+    color: $concrete;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  button {
+    font-size: 1.5em;
+  }
+
+}

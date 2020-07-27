@@ -1,0 +1,65 @@
+@import 'src/styles/color.scss';
+
+
+#quizz-page {
+  background-color: $dove-gray;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  #quizz-page-header {
+    display: flex;
+    flex-grow: 0;
+    padding: 16px;
+
+    .film-img {
+      width: 15%;
+      margin-right: 8px;
+    }
+
+    #quizz-page-header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      #user-input {
+        width: 75%;
+        padding: 8px;
+        border: solid 2px $swapi-black;
+        color: $dove-gray;
+        font-size: 1.5em;
+        margin-bottom: 16px;
+      }
+
+    }
+  }
+
+  #quizz-page-body {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+
+
+.people {
+  border: 1px solid $swapi-black;
+  background-color: $concrete;
+  padding: 8px;
+  min-width: 20%;
+  margin: 4px 2px;
+
+  .people-name {
+    margin: 0;
+  }
+
+  &.hidden .people-name {
+    visibility: hidden;
+  }
+}
