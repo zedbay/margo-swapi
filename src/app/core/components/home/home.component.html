@@ -1,5 +1,5 @@
 <div id="home-page">
-  <h1>Choose a moovie</h1>
+  <h1>Chose a movie</h1>
   <div id="films-container" (mouseleave)="changeCurrentFilmTitle('-')">
     <img *ngFor="let film of films" routerLink="/movie-quizz/{{ film.id }}" (mouseenter)="changeCurrentFilmTitle(film.title)"
       class="film-img" src="./assets/films/{{ film.id }}.jpg" alt="{{ film.title }}">
