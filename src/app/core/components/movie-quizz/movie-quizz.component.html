@@ -1,6 +1,6 @@
 <div id="quizz-page" *ngIf="film">
   <div id="quizz-page-header">
-    <!-- <img src="./assets/films/{{ film.id }}.jpg" alt="{{ film.title }}" class="film-img"> -->
+    <img src="./assets/films/{{ film.id }}.jpg" alt="{{ film.title }}" class="film-img">
     <div id="quizz-page-header-content">
       <h1>Find all characters in {{ film.title }}</h1>
       <input id="user-input" #userInput (input)="userInputChange(userInput.value)" type="text" placeholder="Type a character name">
